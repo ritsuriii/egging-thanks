@@ -3,121 +3,175 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SPECIAL THANKS | EGGING SUPPORT PROJECT</title>
+    <title>SPECIAL THANKS | EGGING CHARITY 2026</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;900&family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
     <style>
-        /* 全体のスタイル設定 */
+        /* 基礎設定 */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
         body {
             background-color: #000;
             color: #fff;
-            font-family: 'Helvetica Neue', Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", sans-serif;
-            line-height: 1.6;
-            text-align: center;
-            padding: 60px 20px;
-            margin: 0;
+            font-family: 'Noto Sans JP', sans-serif;
+            line-height: 1.8;
+            padding: 80px 20px;
+            -webkit-font-smoothing: antialiased;
         }
 
-        /* ページ全体のコンテナ */
         .container {
-            max-width: 900px;
+            max-width: 800px;
             margin: 0 auto;
+            text-align: center;
         }
 
-        /* メインタイトル */
-        h1 {
-            font-size: 28px;
-            letter-spacing: 0.3em;
-            margin-bottom: 60px;
+        /* メインタイトルエリア */
+        header {
+            margin-bottom: 80px;
+        }
+
+        .main-title {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 900;
+            font-size: 56px;
+            line-height: 1.0;
+            letter-spacing: -0.02em;
+            margin-bottom: 10px;
+            color: #fff;
+        }
+
+        .sub-title {
+            font-family: 'Montserrat', sans-serif;
             font-weight: 700;
+            font-size: 18px;
+            letter-spacing: 0.5em;
+            color: #555;
             text-transform: uppercase;
+            margin-bottom: 40px;
         }
 
-        /* 各セクションのタイトル（TESTERS / SUPPORTERS） */
-        .section-title {
-            font-size: 14px;
-            letter-spacing: 0.4em;
-            color: #888;
-            border-bottom: 1px solid #333;
-            padding-bottom: 10px;
-            margin-bottom: 30px;
+        /* セクションタイトル */
+        .section-header {
+            display: flex;
+            align-items: center;
+            justify-content: center;
             margin-top: 60px;
+            margin-bottom: 30px;
+        }
+
+        .section-header::before,
+        .section-header::after {
+            content: "";
+            flex: 1;
+            height: 1px;
+            background: #222;
+        }
+
+        .section-header span {
+            padding: 0 20px;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 14px;
+            font-weight: 700;
+            letter-spacing: 0.3em;
+            color: #888;
             text-transform: uppercase;
         }
 
-        /* 名前を表示するエリア */
-        .name-grid {
+        /* 名前リストのレイアウト */
+        .name-list {
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
-            gap: 12px 20px; /* 上下左右の間隔 */
+            gap: 15px 30px;
         }
 
-        /* テスター名のスタイル（3,000円枠：少し大きめ・強調） */
+        /* テスター枠（3,000円）：大きく強調 */
         .tester-name {
-            font-size: 20px;
-            font-weight: 600;
+            font-size: 24px;
+            font-weight: 700;
             color: #fff;
             letter-spacing: 0.05em;
         }
 
-        /* サポーター名のスタイル（1,000円枠：標準サイズ） */
+        /* サポーター枠（1,000円）：標準 */
         .supporter-name {
             font-size: 16px;
-            color: #bbb;
-        }
-
-        /* 区切り文字（任意で名前の間に「 / 」を入れる場合） */
-        .separator {
-            color: #444;
-            margin: 0 5px;
+            color: #aaa;
+            font-weight: 400;
         }
 
         /* フッター */
-        .footer {
+        footer {
             margin-top: 120px;
-            font-size: 12px;
-            color: #555;
-            letter-spacing: 0.1em;
+            padding-top: 40px;
+            border-top: 1px solid #111;
         }
 
-        /* スマホ向けの微調整 */
+        .footer-text {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 12px;
+            color: #444;
+            letter-spacing: 0.2em;
+            text-transform: uppercase;
+        }
+
+        /* スマホ対応 */
         @media (max-width: 600px) {
-            h1 { font-size: 22px; }
-            .tester-name { font-size: 18px; }
-            .supporter-name { font-size: 14px; }
+            .main-title {
+                font-size: 38px;
+            }
+            .sub-title {
+                font-size: 14px;
+                letter-spacing: 0.3em;
+            }
+            .tester-name {
+                font-size: 20px;
+            }
+            .supporter-name {
+                font-size: 14px;
+            }
         }
     </style>
 </head>
 <body>
 
 <div class="container">
-    <h1>Special Thanks</h1>
+    <header>
+        <h1 class="main-title">EGGING CHARITY</h1>
+        <p class="sub-title">2026 EDITION</p>
+    </header>
 
-    <div class="section-title">Testers</div>
-    <div class="name-grid">
-        <div class="tester-name"笠松 仁</div>
+    <div class="section-header">
+        <span>Official Testers</span>
+    </div>
+    <div class="name-list">
+        <div class="tester-name">笠松 仁</div>
         <div class="tester-name">岡 隆之</div>
         <div class="tester-name">大村 将良</div>
         <div class="tester-name">谷口 大輔</div>
         <div class="tester-name">片山 愛海</div>
         </div>
 
-    <div class="section-title">Supporters</div>
-    <div class="name-grid">
+    <div class="section-header">
+        <span>Project Supporters</span>
+    </div>
+    <div class="name-list">
         <div class="supporter-name">SUPPORTER NAME 01</div>
         <div class="supporter-name">SUPPORTER NAME 02</div>
         <div class="supporter-name">SUPPORTER NAME 03</div>
         <div class="supporter-name">SUPPORTER NAME 04</div>
         <div class="supporter-name">SUPPORTER NAME 05</div>
-        <div class="supporter-name">SUPPORTER NAME 06</div>
-        <div class="supporter-name">SUPPORTER NAME 07</div>
-        <div class="supporter-name">SUPPORTER NAME 08</div>
         </div>
 
-    <div class="footer">
-        EGGING CULTURE REVIVAL PROJECT<br>
-        DESIGNED BY HIROTTON<br>
-        POWERED BY RE:TREE
-    </div>
+    <footer>
+        <p class="footer-text">
+            ARTWORK BY HIROTTON / PROJECT BY RE:TREE<br>
+            © 2026 EGGING CULTURE REVIVAL PROJECT
+        </p>
+    </footer>
 </div>
 
 </body>
